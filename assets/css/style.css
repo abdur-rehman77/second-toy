@@ -1,0 +1,429 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #e7dfdf;
+    background-color: darkviolet;
+    position: fixed;
+    z-index: 100;
+
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header a{
+    color: white;
+}
+
+.header nav .logo{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .tabs ul {
+    display: flex;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.header .nav-icon ul{
+    display: flex;
+    gap: 25px;
+    font-size: large;
+    margin-right: 30px;
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .header nav .tabs{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        margin-left: -15px;
+    }
+
+
+}
+
+.mobile-container{
+    display: none;
+}
+
+.mobile-nav{
+    background-color: darkviolet;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.mobile-nav nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.mobile-nav .tabs ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-nav .cross{
+    margin-top: 20px;
+}
+
+.mobile-nav a{
+    color: white;
+}
+
+/* HEADING */
+.all-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.781);
+
+}
+
+.left-line{
+    border: 1px solid rgba(0, 0, 0, 0.781);
+    height: 0;
+    width: 24%;
+}
+
+.right-line{
+    border: 1px solid rgba(0, 0, 0, 0.781);
+    height: 0;
+    width: 24%;
+}
+
+@media screen and (max-width:850px) {
+    .right-line{
+        width: 20%;
+    }
+
+    .left-line{
+        width: 20%;
+    }
+
+    .all-heading{
+        gap: 50px;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .right-line{
+        width: 15%;
+    }
+
+    .left-line{
+        width: 15%;
+    }
+
+    .all-heading{
+        gap: 40px;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .right-line{
+        width: 10%;
+    }
+
+    .left-line{
+        width: 10%;
+    }
+
+    .all-heading{
+        gap: 30px;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:290px) {
+    .right-line{
+        width: 7%;
+    }
+
+    .left-line{
+        width: 7%;
+    }
+
+    .all-heading{
+        gap: 20px;
+        font-size: 10px;
+    }
+}
+
+/* SHOP BY AGE */
+
+.age-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.age-container a{
+    color: darkmagenta;
+}
+
+.age-container a{
+    color: darkmagenta;
+}
+
+.age-container1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.age-img{
+    width: 150px;
+    text-align: center;
+    transition: transform 0.5s ease
+}
+
+.age-img:hover {
+    transform: scale(1.2);
+  }
+
+.age-img img{
+    width: 100%;
+}
+.age{
+    margin-top: -30px;
+}
+
+.age-mobile{
+    display: none;
+}
+
+@media screen and (max-width:730px) {
+   .age-container{
+    display: none;
+   }
+   .age-mobile{
+    display: block;
+   }
+}
+
+@media screen and (max-width:465px) {
+     .age-img{
+        width: 100px;
+     }
+     .age{
+        font-size: small;
+        margin-top: -20px;
+     }
+ }
+
+ /* NEW ARRIVALS */
+
+ .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 40px;
+ }
+
+ .card{
+    width: 320px;
+    height: 440px;
+    text-align: center;
+    position: relative;
+    margin-top: -40px;
+ }
+
+ .product{
+    width: 310px;
+    /* height: 350px; */
+    margin: auto;
+    margin-top: 17px;
+    transition: transform 0.5s ease;
+ }
+
+ .product:hover{
+    transform: scale(1.05);
+ }
+
+ .product img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .info{
+    margin:auto;
+    margin-top: 10px;
+    
+ }
+
+ .button button{
+    padding: 8px;
+    border: 1px solid darkmagenta;
+    border-radius: 15px;
+    font-size: large;
+    background-color: white;
+    position: absolute;
+    bottom: 107px;
+    left: 90px;
+ }
+
+ .button{
+    display: none;
+ }
+
+ .button button:hover{
+    background-color: darkmagenta;
+    color: white;
+ }
+
+ .card:hover .button{
+    display: block;
+ }
+
+ @media screen and (max-width:685px) {
+    .card{
+        width: 220px;
+        height: 330px;
+        margin-top: -25px;
+    }
+
+    .product{
+      width: 210px;
+    }
+
+    .button button{
+        left: 60px;
+        bottom: 95px;
+        padding:4px ;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .card{
+        width: 150px;
+        height: 252px;
+        margin-top: -30px;
+    }
+
+    .product{
+      width: 140px;
+    }
+
+    .button button{
+        left: 35px;
+        bottom:75px;
+        padding:4px ;
+        font-size: small;
+    }
+
+    .info h4{
+        font-size: 12px;
+    }
+
+    .info h2{
+        font-size: 20px;
+    }
+
+    .info{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:345px) {
+    .card{
+        width: 110px;
+        height: 200px;
+        margin-top: -35px;
+    }
+
+    .product{
+      width: 100px;
+    }
+
+    .button button{
+        left: 14px;
+        bottom:60px;
+        padding:4px ;
+        font-size: small;
+    }
+
+    .info h4{
+        font-size: 9px;
+    }
+
+    .info h2{
+        font-size: 18px;
+    }
+
+    .info{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:262px) {
+    .card{
+        width: 80px;
+        height: 180px;
+        margin-top: -15px;
+    }
+
+    .product{
+      width: 70px;
+    }
+
+    .button button{
+        left: 8px;
+        bottom: 75px;
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    .info h4{
+        font-size: 8px;
+    }
+
+    .info h2{
+        font-size: 16px;
+    }
+
+    .info{
+        margin-top: 20px;
+    }
+}
+
+
+
