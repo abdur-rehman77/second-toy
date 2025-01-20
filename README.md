@@ -1,2 +1,2 @@
 # second-toy
-https://github.com/abdur-rehman77/second-toy
+https://abdur-rehman77.github.io/second-toy
