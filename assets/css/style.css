@@ -196,11 +196,11 @@
 }
 
 .age-container a{
-    color: darkmagenta;
+    color: darkviolet;
 }
 
 .age-container a{
-    color: darkmagenta;
+    color: darkviolet;
 }
 
 .age-container1{
@@ -291,7 +291,7 @@
 
  .button button{
     padding: 8px;
-    border: 1px solid darkmagenta;
+    border: 1px solid darkviolet;
     border-radius: 15px;
     font-size: large;
     background-color: white;
@@ -305,7 +305,7 @@
  }
 
  .button button:hover{
-    background-color: darkmagenta;
+    background-color: darkviolet;
     color: white;
  }
 
@@ -425,5 +425,63 @@
     }
 }
 
+/* BRANDS */
+
+.brand-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-img{
+    width: 180px;
+    margin: auto;
+}
+
+.brand-img img{
+    width: 100%;
+}
+
+@media screen and (max-width:545px) {
+    .brand-img{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:305px) {
+    .brand-img{
+        width: 65px;
+    }
+}
+
+/* AD BANNER */
+.ad{
+    display: flex;
+    justify-content: center;
+}
+
+/* VIEW MORE BUTTON */
+
+.viewmore-button a{
+    padding: 8px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+    font-size: large;
+    background-color: darkviolet;
+    color: white;
+}
+
+.viewmore-button{
+    text-align: center;
+}
 
 
+.viewmore-button a:hover{
+    background-color: white;
+    border: 1px solid darkviolet;
+    color: darkviolet;
+}
+
+.viewmore-button button:hover a{
+    color: darkviolet;
+}
