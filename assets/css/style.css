@@ -192,7 +192,9 @@
 
 .age-container{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 
 .age-container a{
@@ -203,10 +205,6 @@
     color: darkviolet;
 }
 
-.age-container1{
-    display: flex;
-    justify-content: space-around;
-}
 
 .age-img{
     width: 150px;
@@ -229,24 +227,39 @@
     display: none;
 }
 
-@media screen and (max-width:730px) {
-   .age-container{
-    display: none;
-   }
-   .age-mobile{
-    display: block;
-   }
-}
-
-@media screen and (max-width:465px) {
+@media screen and (max-width:555px) {
      .age-img{
         width: 100px;
      }
+
      .age{
         font-size: small;
-        margin-top: -20px;
+        margin-top: -25px;
      }
- }
+}
+
+@media screen and (max-width:400px) {
+    .age-img{
+       width: 70px;
+    }
+
+    .age{
+        font-size: x-small;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width:315px) {
+    .age-img{
+       width: 40px;
+    }
+
+    .age{
+        font-size: 6px;
+        margin-top: -10px;
+    }
+}
+
 
  /* NEW ARRIVALS */
 
